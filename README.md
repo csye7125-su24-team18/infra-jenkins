@@ -1,6 +1,2 @@
-# infra-Jenkins
-
-
-This is a test pull request to check if it works.
-This is a second pull request to check if it works.
-
+# Assignment_01 
+This repository includes Terraform scripts to set up AWS infrastructure for running Jenkins, covering networking components, an EC2 instance with a pre-built AMI, and Caddy configuration for SSL certificates from Let's Encrypt and reverse proxy for Jenkins. The setup creates a VPC, subnets, route tables, security groups, and associates an Elastic IP with the EC2 instance. When terminating, the Jenkins EC2 instance will be terminated, and the Elastic IP disassociated but not released. Additionally, it creates an "A" record subdomain for an already manually configured hosted zone.
